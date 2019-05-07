@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+ <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:stretchColumns="0"
+    android:gravity="center"
+     android:layout_gravity="center_horizontal"
+    tools:context="com.dressler.deo_c.twizy2.MainActivity">
+
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar2"
+        android:indeterminate="false"
+        tools:maxWidth="100dp" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome. What happens with long text? Does it get wrapped around? Or not?"
+        android:fontFamily="sans-serif"
+        android:textSize="24dp"
+        android:id="@+id/textView3"
+        android:layout_below="@id/progressBar2"
+        android:layout_alignParentLeft="true"
+        />
+
+    <Button
+        android:text="Connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:onClick="Toaster"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/statusZ"
+        android:text="Papa von Lili"
+        android:textSize="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+         />
+
+        <Button
+        android:text="Read motor parameters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button4"
+        android:onClick="ReadALot"
+            android:layout_gravity="center"
+            />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+            <Button
+                android:text=""
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:id="@+id/button100"
+                android:onClick="Write100"
+                android:minWidth="10dp"
+                android:background="@mipmap/vvvv95"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <Button
+                android:text=""
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:id="@+id/button80"
+                android:onClick="Write80"
+                android:layout_gravity="center_horizontal"
+                android:background="@mipmap/vschild"
+
+                />
+            </LinearLayout>
+
+            <ToggleButton
+                android:text="Op"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/toggleButton"
+                android:onClick="preop"
+                android:layout_gravity="center"
+                />
+
+            <Button
+                android:text="Power 100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonpo100"
+                android:layout_gravity="center"
+                android:onClick="Write100Power"
+                />
+
+            <Button
+                android:text="Power 80"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spezi"
+                android:onClick="Write80Power"
+                android:layout_gravity="center"
+                />
+            <Button
+                android:text="Log out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lout"
+                android:onClick="logout"
+                android:layout_gravity="center"
+                />
+        <Button
+            android:text="Yes, I can see my motor version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/motver"
+            android:onClick="stepthree"
+            android:layout_gravity="center"
+            />
+
+            <Button
+                android:text="Check access"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:id="@+id/button2"
+                android:onClick='MacheSDOInit'
+                android:layout_gravity="center"
+                />
+
+
+            <Button
+                android:text="Read out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button3"
+                android:visibility="visible"
+                android:onClick='testmet'
+                android:layout_gravity="center"
+                />
+
+        <ListView
+            android:layout_height="500px"
+            android:id="@+id/listView"
+            android:layout_width="wrap_content"
+            android:nestedScrollingEnabled="true"
+            android:layout_gravity="center"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+        <Button
+            android:text="Exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ende"
+            android:visibility="visible"
+            android:onClick='Ende'
+            android:layout_gravity="left"
+            />
+
+            <Button
+                android:text="Change Bluetooth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/changbt"
+                android:visibility="visible"
+                android:onClick='ChangeAdapter'
+                android:layout_gravity="right"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Help"
+                android:id="@+id/hilfe"
+                android:onClick="ZeigeHilfe"
+                />
+
+        </LinearLayout>
+
+
+</LinearLayout>
+</ScrollView>
